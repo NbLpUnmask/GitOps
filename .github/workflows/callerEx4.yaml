@@ -3,6 +3,6 @@ on:
   workflow_dispatch:
 jobs:
   call-workflow-repo:
-    uses: ./.github/workflows/ex4.yaml@main
+    uses: ./.github/workflows/ex4.yaml
     with:
-      node-version: lts/*
+      node-version: 18
