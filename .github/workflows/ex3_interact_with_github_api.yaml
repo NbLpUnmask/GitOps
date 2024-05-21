@@ -14,7 +14,7 @@ jobs:
         SHA: ${{ github.sha }}
       run: echo 'sha_short=${ SHA::7 }' >> $GITHUB_OUTPUT
 
-    - name: The issue using REST API hash 
+    - name: Create Issue
       run: |
         curl --request POST \
         --url https://api.github.com/repos/${{ github.repository }}/issues \
