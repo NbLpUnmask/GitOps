@@ -1,0 +1,11 @@
+name: interact with Github API
+on: 
+  pull_request:
+
+jobs:
+  create-issue:
+    permissions:
+      actions: write
+      checks: write
+    runs-on: ubuntu-latest
+    steps:
