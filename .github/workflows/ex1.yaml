@@ -1,6 +1,6 @@
 name: npm test
 on:
-  workflow_dispach:
+  workflow_dispatch:
 
 Jobs:
   job1:
