@@ -17,6 +17,8 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    needs:
+      - job1
     steps:  
       - name: Check out repository    # Name of the step 
         uses: actions/checkout@v3     #Signature of the action
@@ -24,6 +26,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'       # input Node version
+      - name: Install dependencies
+        run: npm install 
       - name: "Run testing on application"
         run: npm test
   
