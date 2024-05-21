@@ -12,7 +12,7 @@ jobs:
       id: short_sha
       env: 
         SHA: ${{ github.sha }}
-      run: echo "sha_short=${ SHA::7 }" >> $GITHUB_ENV
+      run: echo "sha_short=${SHA::7}" >> $GITHUB_ENV
 
     - name: Create Issue
       run: |
