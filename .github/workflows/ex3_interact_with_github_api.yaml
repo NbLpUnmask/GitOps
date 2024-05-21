@@ -10,7 +10,9 @@ jobs:
     steps: 
     - name: generate short sha
       id: short_sha
-      run: echo 'sha_short=${{ GITHUB_SHA::7 }}' >> $GITHUB_OUTPUT
+      env: 
+        SHA: ${{ github.sha }}
+      run: echo 'sha_short=${ SHA::7 }' >> $GITHUB_OUTPUT
 
     - name: The issue using REST API hash 
       run: |
