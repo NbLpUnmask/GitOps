@@ -1,0 +1,9 @@
+name: Caller workflow
+on:
+  workflow_dispatch:
+jobs:
+  call-workflow-repo:
+    runs-on: ubuntu-latest
+    uses: ./.github/workflows/ex4.yaml@main
+    with:
+      node-version: lts/*
