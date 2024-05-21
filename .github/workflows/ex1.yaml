@@ -4,7 +4,7 @@ on:
 
 jobs:
   job1:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository    # Name of the step 
         uses: actions/checkout@v3     #Signature of the action
