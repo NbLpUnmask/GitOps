@@ -12,8 +12,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'       # input Node version
-      - name: Run install
+      - name: Install dependencies
         run: npm install
+
+  job2:
 
   
 
