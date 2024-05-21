@@ -2,7 +2,7 @@ name: npm test
 on:
   workflow_dispatch:
 
-Jobs:
+jobs:
   job1:
     runs-on: ubunto-latest
     steps:
